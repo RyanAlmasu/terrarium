@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import { AnimationContext } from '../context/AnimationContext';
 import FallingLeaf from './animations/FallingLeaf';
+import { Link } from 'react-scroll';
 
 const Hero = () => {
   const { isAnimating } = useContext(AnimationContext);
@@ -40,12 +41,28 @@ const Hero = () => {
             Artfully crafted terrariums that bring the tranquility of nature into your space.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <button className="bg-sage text-beige py-3 px-8 rounded-sm hover:bg-sage-dark transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-sage-dark focus:ring-opacity-50">
+            <Link
+              to="products"
+              smooth={true}
+              duration={800}
+              offset={-80}
+              className="bg-sage text-beige py-3 px-8 rounded-sm hover:bg-sage-dark transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-sage-dark focus:ring-opacity-50 cursor-pointer text-center"
+              role="button"
+              aria-label="View our collection"
+            >
               Explore Collection
-            </button>
-            <button className="border border-beige text-beige py-3 px-8 rounded-sm hover:bg-beige hover:bg-opacity-10 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-beige focus:ring-opacity-50">
+            </Link>
+            <Link
+              to="story"
+              smooth={true}
+              duration={800}
+              offset={-80}
+              className="border border-beige text-beige py-3 px-8 rounded-sm hover:bg-beige hover:bg-opacity-10 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-beige focus:ring-opacity-50 cursor-pointer text-center"
+              role="button"
+              aria-label="Learn about our philosophy"
+            >
               Our Philosophy
-            </button>
+            </Link>
           </div>
         </div>
       </div>

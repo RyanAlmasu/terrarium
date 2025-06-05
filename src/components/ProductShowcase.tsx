@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { products } from '../data/products';
+import { Link } from 'react-scroll';
 
 const ProductShowcase = () => {
   const [activeProduct, setActiveProduct] = useState(0);
@@ -37,6 +38,15 @@ const ProductShowcase = () => {
                       : 'pl-4 border-l-2 border-transparent opacity-60 hover:opacity-80'
                   }`}
                   onClick={() => setActiveProduct(index)}
+                  role="button"
+                  tabIndex={0}
+                  onKeyPress={(e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                      setActiveProduct(index);
+                    }
+                  }}
+                  aria-label={`View ${product.name}`}
+                  aria-selected={activeProduct === index}
                 >
                   <h3 className="text-xl md:text-2xl font-medium mb-2">{product.name}</h3>
                   {activeProduct === index && (
@@ -46,9 +56,17 @@ const ProductShowcase = () => {
                       </p>
                       <div className="flex justify-between items-center">
                         <span className="text-xl text-sage">${product.price}</span>
-                        <button className="bg-sage text-beige py-2 px-4 rounded-sm hover:bg-sage-dark transition-colors duration-300">
-                          Add to Cart
-                        </button>
+                        <Link
+                          to="contact"
+                          smooth={true}
+                          duration={800}
+                          offset={-80}
+                          className="bg-sage text-beige py-2 px-4 rounded-sm hover:bg-sage-dark transition-colors duration-300 cursor-pointer"
+                          role="button"
+                          aria-label={`Purchase ${product.name}`}
+                        >
+                          Purchase Now
+                        </Link>
                       </div>
                     </div>
                   )}

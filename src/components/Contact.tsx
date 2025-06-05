@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: '',
-    email: 'rizkyfajar068@gmail.com',
+    email: '',
     phone: '',
     message: '',
     product: ''

@@ -10,14 +10,12 @@ const Hero = () => {
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat filter brightness-90"
         style={{ 
-          backgroundImage: "url('https://images.pexels.com/photos/1903965/pexels-photo-1903965.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')" 
+          backgroundImage: "url('/71HmGbo2AhL.jpg')" 
         }}
       ></div>
       
-      {/* Overlay */}
       <div className="absolute inset-0 bg-charcoal bg-opacity-30"></div>
       
-      {/* Falling leaves animation */}
       {isAnimating && (
         <>
           <FallingLeaf delay={1} left="10%" size="sm" />
@@ -32,14 +30,14 @@ const Hero = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-2xl">
           <span className="inline-block py-1 px-3 border border-beige text-beige text-sm mb-6 opacity-90 transform -rotate-1">
-            自然の一部 • Part of Nature
+            Handcrafted with Care
           </span>
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-light text-beige mb-6 leading-tight">
             Find balance in<br />
             <span className="font-normal">miniature worlds</span>
           </h1>
           <p className="text-beige text-lg md:text-xl mb-8 max-w-md leading-relaxed">
-            Handcrafted terrariums that bring the tranquility of Japanese gardens into your space.
+            Artfully crafted terrariums that bring the tranquility of nature into your space.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <button className="bg-sage text-beige py-3 px-8 rounded-sm hover:bg-sage-dark transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-sage-dark focus:ring-opacity-50">
@@ -52,7 +50,6 @@ const Hero = () => {
         </div>
       </div>
       
-      {/* Scroll indicator */}
       <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 flex flex-col items-center text-beige">
         <span className="text-sm opacity-80 mb-2">Scroll to explore</span>
         <div className="w-px h-10 bg-beige opacity-60 animate-pulse"></div>

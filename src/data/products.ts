@@ -4,40 +4,35 @@ export interface Product {
   description: string;
   price: number;
   image: string;
-  kanji: string;
 }
 
 export const products: Product[] = [
   {
     id: 1,
-    name: "Koke Garden",
-    description: "A tranquil moss terrarium showcasing the subtle beauty of Japanese forest floors. Featuring multiple moss varieties arranged in a wabi-sabi style that celebrates natural imperfection.",
+    name: "Moss Garden Terrarium",
+    description: "A tranquil moss terrarium showcasing the subtle beauty of forest floors. Multiple moss varieties arranged to celebrate natural imperfection.",
     price: 89,
-    image: "https://images.pexels.com/photos/4505167/pexels-photo-4505167.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    kanji: "苔"
+    image: "/8.-terrarium-bahagia.webp"
   },
   {
     id: 2,
-    name: "Bamboo Sanctuary",
-    description: "Miniature bamboo creates a serene atmosphere in this terrarium, reminiscent of Japan's famous bamboo forests. Includes small stone accents for a balanced composition.",
+    name: "Mountain Path Terrarium",
+    description: "Inspired by misty mountain paths, this terrarium features carefully placed stones and vibrant moss creating a meditative atmosphere.",
     price: 105,
-    image: "https://images.pexels.com/photos/6913636/pexels-photo-6913636.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    kanji: "竹"
+    image: "/20231212_105747-PhotoRoom-3.webp"
   },
   {
     id: 3,
-    name: "Stone & Water",
-    description: "Inspired by traditional Japanese rock gardens, this terrarium features carefully placed stones and a small water element that creates a meditative atmosphere in any space.",
+    name: "Desert Gem House",
+    description: "A geometric glass house filled with an artful arrangement of succulents, creating a stunning display of colors and textures.",
     price: 129,
-    image: "https://images.pexels.com/photos/1477166/pexels-photo-1477166.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    kanji: "石"
+    image: "/images (1).jpg"
   },
   {
     id: 4,
-    name: "Shizen Balance",
-    description: "Our most complex terrarium embodies the Japanese principle of balance with five distinct plant species, miniature stone pathways, and a small raked sand area.",
+    name: "Forest Floor Terrarium",
+    description: "Our most serene terrarium embodies natural balance with lush moss, miniature plants, and a peaceful arrangement.",
     price: 159,
-    image: "https://images.pexels.com/photos/4505159/pexels-photo-4505159.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    kanji: "自然"
+    image: "/images (2).jpg"
   }
 ];

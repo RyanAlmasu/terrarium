@@ -6,6 +6,7 @@ import Story from './components/Story';
 import CareGuide from './components/CareGuide';
 import Testimonials from './components/Testimonials';
 import Newsletter from './components/Newsletter';
+import Contact from './components/Contact';
 import Footer from './components/Footer';
 import { AnimationProvider } from './context/AnimationContext';
 
@@ -21,6 +22,7 @@ function App() {
           <CareGuide />
           <Testimonials />
           <Newsletter />
+          <Contact />
         </main>
         <Footer />
       </div>
